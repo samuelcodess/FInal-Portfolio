@@ -13,6 +13,7 @@ body {
   font-family: 'Poppins' sans-serif;
     line-height: 1.5;
     font-size: 16px;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -216,6 +217,17 @@ section {
     margin-top: 13px;
     
 }
+.nav-link {
+    text-decoration: none;
+    color: #000; /* Default color */
+}
+
+.nav-link.active {
+    color: red; /* Change the color to your desired color */
+}
+
+
+
 .aside .nav {
     margin-top: 50px;
 }
@@ -234,6 +246,10 @@ section {
 }
 .aside .nav li a.active {
     color: var(--skin-color);
+}
+.aside .nav li a:hover{
+    color: var(--skin-color);
+    transition: 0.4s ease;
 }
 .aside .nav li a i {
     margin-right: 15px;
